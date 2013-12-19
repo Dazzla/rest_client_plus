@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rest_client_plus (0.0.3)
+    rest_client_plus (0.0.4)
 
 GEM
   remote: https://rubygems.org/
