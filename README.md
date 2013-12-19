@@ -16,6 +16,10 @@ And then execute:
 Or install it yourself as:
 
     $ gem install rest_client_plus
+    
+Require using: 
+
+    $ require 'rest_client_plus'
 
 ## Usage
 
