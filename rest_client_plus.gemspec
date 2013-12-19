@@ -4,12 +4,12 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |s|
   s.name          = "rest_client_plus"
-  s.version       = "0.0.3"
+  s.version       = "0.0.4"
   s.authors       = ["John Wakeling", "Darren Bown"]
   s.email         = ["jwakeling23@gmail.com", "darren.bown@droidqa.co.uk"]
   s.description   = %q{Extensions to Ruby's RestClient}
   s.summary       = %q{}
-  s.homepage      = "https://github.com/johnwake/rest_client_plus"
+  s.homepage      = "https://github.com/dazzla/rest_client_plus"
   s.license       = "MIT"
 
   s.files         = `git ls-files`.split($/)
