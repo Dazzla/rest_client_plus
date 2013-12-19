@@ -1,4 +1,4 @@
-rest_client_plus
-================
+RestClientPlus
+==============
 
-Ruby RestClient extensions
+Extensions to Ruby's RestClient

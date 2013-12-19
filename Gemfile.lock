@@ -1,0 +1,17 @@
+PATH
+  remote: .
+  specs:
+    rest_client_plus (0.0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rake (10.1.0)
+
+PLATFORMS
+  x86-mingw32
+
+DEPENDENCIES
+  bundler
+  rake
+  rest_client_plus!
