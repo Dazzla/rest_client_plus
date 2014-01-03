@@ -20,5 +20,9 @@ class RestClientPlusTest < Test::Unit::TestCase
     assert_respond_to(RestClientPlus::Requests.post_json_to_url('http://www.mocks.stub', {:body => "body"}), :each_key)
   end
 
+  def test_put_json_to_url
+    assert_respond_to(RestClientPlus::Requests.put_json_to_url('http://www.mocks.stub', {:body => "body"}), :each_key)
+  end
+
 
 end
