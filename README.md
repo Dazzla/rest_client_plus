@@ -7,8 +7,13 @@ Extensions to Ruby's RestClient
 
 Tested against ruby versions
 
-    1.9.3-p484
-    2.0.0-p353
+    not working
+      1.8.7
+
+     working
+      1.9.3-p484
+      2.0.0-p353
+      2.1.0dev (2013-11-23 trunk 43807)
 
 Add this line to your application's Gemfile:
 
