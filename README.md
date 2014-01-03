@@ -5,6 +5,11 @@ Extensions to Ruby's RestClient
 
 ## Installation
 
+Tested against ruby versions
+
+    1.9.3-p484
+    2.0.0-p353
+
 Add this line to your application's Gemfile:
 
     gem 'rest_client_plus'
