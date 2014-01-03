@@ -1,11 +1,12 @@
 require 'test/unit'
 require_relative '../lib/rest_client_plus'
-require_relative '../tests/webservice_stubs/stubs'
+require_relative '../tests/webservice_stubs/data'
+require_relative 'webservice_stubs/stubs'
 
 class RestClientPlusTest < Test::Unit::TestCase
 
   def setup
-
+    WSStubs.setup_stubs
   end
 
   def test_rest_client_plus_is_a_module

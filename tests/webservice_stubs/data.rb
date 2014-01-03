@@ -1,3 +1,4 @@
+#TODO: Add to config. Shouldn't be parsable ruby.
 JSON_RETURN_BODY =  {:body =>
 
                          {:one => "1",
