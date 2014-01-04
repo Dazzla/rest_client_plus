@@ -1,13 +1,14 @@
 #TODO: Add to config. Shouldn't be parsable ruby.
-JSON_RETURN_BODY =  {:body =>
 
-                         {:one => "1",
-                          :two => "2"}
-
-                    }
 RETURN_HEADERS = {}
 
-RETURN_OBJECT = {:status => 200, :body => JSON_RETURN_BODY, :headers => RETURN_HEADERS}
+RETURN_BODY =
+    {:body =>
+         {:one => "1",
+          :two => "2"}
+    }
+
+RETURN_OBJECT = {:status => 200, :body => RETURN_BODY, :headers => RETURN_HEADERS}
 
 REQUEST_HEADERS =
     {'Accept'=>'*/*; q=0.5, application/xml',
@@ -18,10 +19,4 @@ REQUEST_HEADERS =
     }
 
 REQUEST_BODY = {"body"=>"body"}
-
-RETURN_BODY =
-  {:body =>
-       {:one => "1",
-        :two => "2"}
-  }
 
