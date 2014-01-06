@@ -11,3 +11,13 @@ module RestClientPlus
 
 end
 
+class Array
+
+  def unwrap_from_array!
+    RestClientPlus::ArrayHelper.unwrap_from_array(self)
+  end
+
+end
+
+
+

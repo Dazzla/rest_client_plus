@@ -21,4 +21,8 @@ class ArrayHelperTest < Test::Unit::TestCase
     assert_equal(@test_string, RestClientPlus::ArrayHelper.unwrap_from_array(@test_string))
   end
 
+  def test_array_is_extended
+    assert_equal(@test_hash, @hash_wrapped_in_array.unwrap_from_array!)
+  end
+
 end
