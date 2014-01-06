@@ -31,6 +31,10 @@ Require using:
 
     $ require 'rest_client_plus'
 
+## Issues
+
+  Warning: You are using Excon 0.20.1. WebMock supports version >= 0.27.5.
+
 ## Usage
 
   RestClientPlus provides GET, POST and PUT methods which return a Ruby hash if json is received.
