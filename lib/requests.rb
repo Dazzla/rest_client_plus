@@ -14,12 +14,8 @@ module RestClientPlus
       parse_response(RestClient.get(input_url))
     end
 
-
-private
-
     def self.parse_response(response)
-      JSON.parse response.body if response.body.respond_to?(:reverse)
-      response.body
+      return response.respond_to?(:reverse) ? JSON.parse(response) : response
     end
 
   end

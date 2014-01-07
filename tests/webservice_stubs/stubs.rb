@@ -6,7 +6,12 @@ module WSStubs
 
     WebMock::API.stub_request(:get, "www.mocks.stub").to_return(RETURN_BODY)
 
-    WebMock::API.stub_request(:any, "http://www.mocks.stub/").
+    WebMock::API.stub_request(:post, "http://www.mocks.stub/").
+        with(:body => REQUEST_BODY,
+             :request_headers => REQUEST_HEADERS).
+        to_return(RETURN_OBJECT)
+
+    WebMock::API.stub_request(:put, "http://www.mocks.stub/").
         with(:body => REQUEST_BODY,
              :request_headers => REQUEST_HEADERS).
         to_return(RETURN_OBJECT)
