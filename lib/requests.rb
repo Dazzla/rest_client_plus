@@ -15,7 +15,7 @@ module RestClientPlus
     end
 
     def self.parse_response(response)
-      return response.respond_to?(:reverse) ? JSON.parse(response) : response
+     response.respond_to?(:reverse) ? JSON.parse(response) : response
     end
 
   end

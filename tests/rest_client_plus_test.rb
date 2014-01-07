@@ -11,7 +11,6 @@ class RestClientPlusTest < Test::Unit::TestCase
 
   def test_rest_client_plus_is_a_module
     assert_respond_to(RestClientPlus, :constants)
-    $stdout.puts RestClient.get('http://www.mocks.stub')
   end
 
   def test_get_json_from_url
