@@ -42,7 +42,7 @@ Require using:
   ArrayHelper.unwrap_from_array will unwrap a hash from a single-element array. Array is also extended as
   Array#unwrap_from_array so:
 
-    [ {:key => "value"} ].unwrap_from_array  #=> {:key => "value"}
+    [ {:key => "value"} ].unwrap_from_array!  #=> {:key => "value"}
 
 
 ## Running Tests
