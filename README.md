@@ -39,7 +39,11 @@ Require using:
 
   RestClientPlus provides GET, POST and PUT methods which return a Ruby hash if json is received.
 
-  ArrayHelper.unwrap_from_array will unwrap a hash from a single-element array
+  ArrayHelper.unwrap_from_array will unwrap a hash from a single-element array. Array is also extended as
+  Array#unwrap_from_array so:
+
+    [ {:key => "value"} ].unwrap_from_array  #=> {:key => "value"}
+
 
 ## Running Tests
 
