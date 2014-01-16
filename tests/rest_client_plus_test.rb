@@ -29,5 +29,11 @@ class RestClientPlusTest < Test::Unit::TestCase
     assert_respond_to(RestClientPlus::Requests.parse_response({:body =>{:one => "1", :two => "2"}}.to_json), :each_key)
   end
 
+  def test_error_message_from_url
+    call = RestClientPlus::Requests.get_json_from_url('http://www.mocks.stub/throwerror')
+    expected_error = {500 => "Internal Server Error"}
+    assert_equal(call.response, expected_error)
+  end
+
 
 end
