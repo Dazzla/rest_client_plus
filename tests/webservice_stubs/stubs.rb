@@ -16,9 +16,9 @@ module WSStubs
              :request_headers => REQUEST_HEADERS).
         to_return(RETURN_OBJECT)
 
-    stub_request(:get, 'www.mocks.stub/throwerror').to_return(:status => [500, "Internal Server Error"])
-    req = Net::HTTP::Get.new("/throwerror")
-    Net::HTTP.start("www.mocks.stub") {|http| http.request(req)}.message
+    WebMock::API.stub_request(:get, "http://www.mocks.stub/throwerror").
+        with(:request_headers => REQUEST_HEADERS).
+        to_return(:status => 400, :body => "400 Bad request Error Body", :headers => {})
 
   end
 

@@ -30,9 +30,7 @@ class RestClientPlusTest < Test::Unit::TestCase
   end
 
   def test_error_message_from_url
-    call = RestClientPlus::Requests.get_json_from_url('http://www.mocks.stub/throwerror')
-    expected_error = {500 => "Internal Server Error"}
-    assert_equal(call.response, expected_error)
+    assert_equal(RestClientPlus::Requests.get_json_from_url('http://www.mocks.stub/throwerror'), request.RuntimeError)
   end
 
 
